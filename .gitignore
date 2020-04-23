@@ -1,0 +1,8 @@
+
+*.ide-shm
+*.cs
+*.cache
+*.lock
+*.ide
+*.ide-wal
+.vs/GitTestavimuisi/v15/.suo
