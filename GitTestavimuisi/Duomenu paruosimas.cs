@@ -14,6 +14,21 @@ namespace GitTestavimuisi
         DateTime DuomenuParuososLaikas { get; set; }
 
     }
+    class Duomenys : IDuomenys
+    {
+        public int Id { get; set; }
+        public string Zinute { get; set; }
+        public DateTime DuomenuParuososLaikas { get; set; }
+
+        public Duomenys(int id, string zinute, DateTime laikas)
+        {
+            Id = id;
+            Zinute = zinute;
+            DuomenuParuososLaikas = laikas;
+        }
+
+
+    }
 
     class Duomenys : IDuomenys
     {
@@ -44,7 +59,10 @@ namespace GitTestavimuisi
 
         public string SkaitytiDuomenis()
         {
+
+
             return "a";
+
         }
     }
 
@@ -63,12 +81,15 @@ namespace GitTestavimuisi
         void SiustiPaskutinDuomeni();
     }
 
-    class Duomenu_Paruosimas : IDuomenu_paruosimas
+    class Duomenu_paruosimas : IDuomenu_paruosimas
+
     {
         public List<IDuomenys> Data { get; }
 
         public void PridetiDuomeni(IDuomenys duomuo)
         {
+
+            Data.Add(duomuo);
 
         }
 
@@ -92,6 +113,7 @@ namespace GitTestavimuisi
             return "";
         }
     }
+
 }
 
 class gDuomenys : IDuomenys
@@ -149,4 +171,5 @@ class gDuomenu_paruosimas : IDuomenu_paruosimas
         string a = "dfregf";
         return a;
     }
+
 }
