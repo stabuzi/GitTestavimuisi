@@ -35,4 +35,21 @@ namespace GitTestavimuisi
 
         void SiustiPaskutinDuomeni();
     }
+    public class Duomenys
+    {
+        public int Id;
+        public string Zinute;
+        DateTime DuomenuParuososLaikas = new DateTime();
+    }
+    public class Komunikacija
+    {
+        public void Siusti(string zinute)
+        {
+            zinute = "Labas";
+        }
+    }
+    public class Duomenu_paruosimas
+    {
+
+    }
 }
