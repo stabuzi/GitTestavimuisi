@@ -44,6 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Duomenu paruosimas.cs" />
+    <Compile Include="Duomenu_Paruosimas.cs" />
+    <Compile Include="Duomenys.cs" />
+    <Compile Include="Komunikacija.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
