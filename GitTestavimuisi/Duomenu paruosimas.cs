@@ -12,6 +12,7 @@ namespace GitTestavimuisi
         int Id { get; set; }
         string Zinute { get; set; }
         DateTime DuomenuParuososLaikas { get; set; }
+
     }
 
     class Duomenys : IDuomenys
@@ -19,6 +20,7 @@ namespace GitTestavimuisi
         public int Id { get; set; }
         public string Zinute { get; set; }
         public DateTime DuomenuParuososLaikas { get; set; }
+
     }
 
     interface IKomunikacija
