@@ -11,7 +11,6 @@ namespace GitTestavimuisi
         int Id { get; set; }
         string Zinute { get; set; }
         DateTime DuomenuParuososLaikas { get; set; }
-
     }
 
     interface IKomunikacija
