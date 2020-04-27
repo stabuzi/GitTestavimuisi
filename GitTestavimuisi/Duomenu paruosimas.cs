@@ -59,7 +59,7 @@ class gKomunikacija : IKomunikacija
 
     public string SkaitytiDuomenis()
     {
-        string a = "df";
+        string a = "eeeeeeeeeeeeeeeeeeedf";
         return a;
     }
 }
