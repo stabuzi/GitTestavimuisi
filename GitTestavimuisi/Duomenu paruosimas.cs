@@ -90,7 +90,7 @@ class gDuomenu_paruosimas : IDuomenu_paruosimas
 
     public string SukurtiDuomenuEilute(IDuomenys duomuo)
     {
-        string a = "df";
+        string a = "dfregf";
         return a;
     }
 }
