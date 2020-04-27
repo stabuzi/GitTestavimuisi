@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GitTestavimuisi;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -26,7 +27,17 @@ namespace GitTestavimuisi
             DuomenuParuososLaikas = laikas;
         }
 
+
     }
+
+    class Duomenys : IDuomenys
+    {
+        public int Id { get; set; }
+        public string Zinute { get; set; }
+        public DateTime DuomenuParuososLaikas { get; set; }
+
+    }
+
     interface IKomunikacija
     {
         void Siusti(string zinute);
@@ -48,7 +59,10 @@ namespace GitTestavimuisi
 
         public string SkaitytiDuomenis()
         {
-            return "";
+
+
+            return "a";
+
         }
     }
 
@@ -66,25 +80,32 @@ namespace GitTestavimuisi
 
         void SiustiPaskutinDuomeni();
     }
+
     class Duomenu_paruosimas : IDuomenu_paruosimas
+
     {
         public List<IDuomenys> Data { get; }
 
         public void PridetiDuomeni(IDuomenys duomuo)
         {
+
             Data.Add(duomuo);
+
         }
 
         public void SiustiDuomeni(int kelintas)
         {
+
         }
 
         public void SiustiPaskutinDuomeni()
         {
+
         }
 
         public void SiustiPirmaDuomeni()
         {
+
         }
 
         public string SukurtiDuomenuEilute(IDuomenys duomuo)
@@ -92,4 +113,63 @@ namespace GitTestavimuisi
             return "";
         }
     }
+
+}
+
+class gDuomenys : IDuomenys
+{
+    public int Id { get ; set ; }
+    public string Zinute { get; set ; }
+    public DateTime DuomenuParuososLaikas { get ; set ; }
+}
+
+class gKomunikacija : IKomunikacija
+{
+    public void PakartotiPaskutineZinute()
+    {
+        
+    }
+
+    public void Siusti(string zinute)
+    {
+       
+    }
+
+    public string SkaitytiDuomenis()
+    {
+        string a = "eeeeeeeeeeeeeeeeeeedf";
+        return a;
+    }
+}
+
+class gDuomenu_paruosimas : IDuomenu_paruosimas
+{
+    public List<IDuomenys> Data => throw new NotImplementedException();
+
+    public void PridetiDuomeni(IDuomenys duomuo)
+    {
+       
+    }
+
+    public void SiustiDuomeni(int kelintas)
+    {
+        
+    }
+
+    public void SiustiPaskutinDuomeni()
+    {
+       
+    }
+
+    public void SiustiPirmaDuomeni()
+    {
+        
+    }
+
+    public string SukurtiDuomenuEilute(IDuomenys duomuo)
+    {
+        string a = "dfregf";
+        return a;
+    }
+
 }
